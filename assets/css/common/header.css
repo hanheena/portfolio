@@ -1,0 +1,68 @@
+#header {
+  width: 100%;
+  height: 3em;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  background: #0000005c;
+  transition: opacity 0.35s ease, visibility 0.35s;
+  margin: 0;
+}
+
+#header.not-visible {
+  opacity: 0;
+}
+
+#header:hover {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+#header .header_logo {
+  height: 3em;
+  line-height: 3em;
+  width: 47%;
+  margin-left: 3%;
+}
+
+#header .header_logo p {
+  margin: 0;
+  font-weight: 700;
+}
+
+#header .header_logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0;
+}
+
+#header .header_logo a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #bdbdbd;
+}
+
+#header .header_menu {
+  height: 3em;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0em;
+  width: 8%;
+  margin-left: 89%;
+  text-align: right;
+  margin-right: 3%;
+}
+
+#header .header_menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.7em;
+  line-height: 2em;
+}
+
+#header .header_menu a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}

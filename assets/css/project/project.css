@@ -1,0 +1,538 @@
+#project {
+  background-color: #17093a;
+  height: 302em;
+  color: #fff;
+  padding: 2em 8em 0 8em;
+}
+
+#project:before {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: "";
+  display: block;
+  height: 25em;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  top: -25em;
+  background-image: url(/resource/img/tree2.png);
+}
+
+#project .section_title {
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 3px;
+  width: 100%;
+  text-align: right;
+  text-shadow: 3px 5px #9b76d8;
+  border-bottom: 3px solid #635a7b;
+  padding-bottom: 3%;
+}
+
+#project .contents {
+  margin-top: 8em;
+  line-height: 200%;
+  font-size: 1.1em;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* #project .contents.animation {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  opacity: 1;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+} */
+
+#project #edms,
+#project #ems1,
+#project #ems2,
+#project #ups,
+#project #drone {
+  display: flex;
+}
+
+#project .contents .project_root {
+  height: 36em;
+  /* background: black; */
+}
+
+#project div[class="project_root"]:not(:last-child) {
+  margin-bottom: 12em;
+}
+
+#project .contents .project_img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* height: 55%; */
+  position: absolute;
+}
+
+#project .contents #edms .project_img {
+  top: 0;
+}
+
+#project .contents #ems1 .project_img {
+  top: 48em;
+  margin-left: 50%;
+}
+
+#project .contents #ems2 .project_img {
+  top: 96em;
+}
+#project .contents #ups .project_img {
+  top: 144em;
+  margin-left: 45%;
+}
+#project .contents #drone .project_img {
+  top: 192em;
+}
+
+#project .project_img.img_back_1 {
+  width: 50%;
+  background-image: url("/resource/img/mornitor.png");
+}
+
+#project .project_img.img_back_2 {
+  width: 55%;
+  background-image: url("/resource/img/total_device.png");
+}
+
+#project .contents .project_img .contents_img img {
+  width: 100%;
+  image-rendering: pixelated;
+}
+
+#project .contents #edms .project_content {
+  width: 45%;
+  padding: 2em 0 0 3em;
+  margin-left: 55%;
+}
+
+#project .contents #ems1 .project_content {
+  width: 50%;
+  padding: 2em 3em 0 0;
+  margin-right: 50%;
+}
+
+#project .contents #ems2 .project_content {
+  width: 50%;
+  margin-left: 50%;
+  padding: 2em 0 0 3em;
+}
+
+#project .contents #ups .project_content {
+  width: 45%;
+  margin-right: 55%;
+  padding: 2em 3em 0 0;
+}
+
+#project .contents #drone .project_content {
+  width: 50%;
+  margin-left: 50%;
+  padding: 2em 0 0 3em;
+}
+
+#project .contents .project_content .project_seq {
+  font-size: 3.5em;
+  font-weight: 600;
+  color: #9b76d8;
+  margin: 0;
+  text-shadow: 3px 3px #ffffff;
+}
+
+#project .contents .project_content .project_name {
+  font-weight: 600;
+  font-size: 1.3em;
+  text-shadow: none;
+  word-break: keep-all;
+  margin: 0;
+  color: #fff;
+  height: 5em;
+}
+
+#project #edms .project_content .project_name,
+#project #ems1 .project_content .project_name,
+#project #ups .project_content .project_name {
+  height: 3em;
+}
+
+#project #ems2 .project_content .project_name,
+#project #drone .project_content .project_name {
+  height: 5em;
+}
+
+#project .contents .project_content .project_period {
+  /* margin: 0 0 7% 0; */
+  color: #9891a7;
+  letter-spacing: 1px;
+}
+
+#project .contents .project_content .project_dev_percent {
+  display: flex;
+}
+
+#project
+  .contents
+  .project_content
+  .project_dev_percent
+  .project_dev_percent_title {
+  width: 24%;
+}
+
+#project .contents .project_content .project_dev_percent .percent_figure {
+  background: #ffffff3d;
+  border-radius: 8px;
+  width: 76%;
+  height: 25px;
+  margin: 5px 0;
+}
+
+#project .contents .project_content .project_dev_percent .percent_fill {
+  border-radius: 8px;
+  height: 25px;
+}
+
+#project #edms .project_dev_percent .percent_fill {
+  background: linear-gradient(318deg, #682affb3, #6efb54bd);
+}
+
+#project #ems1 .project_dev_percent .percent_fill {
+  background: linear-gradient(318deg, #682affb3, #6efb54bd);
+}
+
+#project #ems2 .project_dev_percent .percent_fill {
+  background: linear-gradient(318deg, #682affb3, #6efb54bd);
+}
+
+#project #ups .project_dev_percent .percent_fill {
+  background: linear-gradient(318deg, #682affb3, #6efb54bd);
+}
+
+#project #drone .project_dev_percent .percent_fill {
+  background: linear-gradient(318deg, #682affb3, #6efb54bd);
+}
+
+#project .contents .project_content .project_dev_percent .percent_data {
+  padding-right: 6px;
+  display: block;
+  color: #fff;
+  font-size: 0.8em;
+  text-align: right;
+  box-sizing: border-box;
+  height: 25px;
+  line-height: 25px;
+}
+
+#project .contents .project_content .project_colorcode {
+  display: flex;
+}
+
+#project .contents .project_content .project_colorcode div {
+  height: 25px;
+  width: 25px;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+/* ---------edms 색상 코드--------- */
+#project #edms .project_colorcode div.code_1 {
+  background-color: #b2d249;
+}
+
+#project #edms .project_colorcode div.code_2 {
+  background-color: #26a19d;
+}
+
+#project #edms .project_colorcode div.code_3 {
+  background-color: #000;
+}
+
+#project #edms .project_colorcode div.code_4 {
+  background-color: #d4d4d4;
+}
+
+/* ---------ems1 색상 코드--------- */
+#project #ems1 .project_colorcode div.code_1 {
+  background-color: #24242c;
+}
+
+#project #ems1 .project_colorcode div.code_2 {
+  background-color: #d75b28;
+}
+
+#project #ems1 .project_colorcode div.code_3 {
+  background-color: #50b05a;
+}
+
+#project #ems1 .project_colorcode div.code_4 {
+  background-color: #3b81bd;
+}
+
+/* ---------ems2 색상 코드--------- */
+#project #ems2 .project_colorcode div.code_1 {
+  background-color: #272727;
+}
+
+#project #ems2 .project_colorcode div.code_2 {
+  background-color: #e3e5e8;
+}
+
+#project #ems2 .project_colorcode div.code_3 {
+  background-color: #fe7f27;
+}
+
+#project #ems2 .project_colorcode div.code_4 {
+  background-color: #16538b;
+}
+
+/* ---------ups 색상 코드--------- */
+#project #ups .project_colorcode div.code_1 {
+  background-color: #003a63;
+}
+
+#project #ups .project_colorcode div.code_2 {
+  background-color: #001e33;
+}
+
+#project #ups .project_colorcode div.code_3 {
+  background-color: #40deba;
+}
+
+#project #ups .project_colorcode div.code_4 {
+  background-color: #fff;
+}
+
+/* ---------drone 색상 코드--------- */
+#project #drone .project_colorcode div.code_1 {
+  background-color: #a7a7a7;
+}
+
+#project #drone .project_colorcode div.code_2 {
+  background-color: #fff;
+}
+
+#project #drone .project_colorcode div.code_3 {
+  background-color: #082d4c;
+}
+
+#project #drone .project_colorcode div.code_4 {
+  background-color: #2e95c7;
+}
+
+#project .contents .project_content .project_description {
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+#project .contents .project_content ul {
+  list-style: none;
+  color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+#project .contents .project_content ul li {
+  height: 35px;
+  line-height: 35px;
+  margin-bottom: 3%;
+}
+
+/* #project .project_img div[class*="project_img_back"] {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 0em;
+} */
+
+/* -----------------슬라이드----------------- */
+/* * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+img {vertical-align: middle;} */
+
+#project .slide_img {
+  display: none;
+}
+
+/* slideshow-container */
+#project .slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+#project .prev,
+#project .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 180px;
+}
+
+/* Position the "next button" to the right */
+#project .next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#project .prev:hover,
+#project .next:hover {
+  /* background: linear-gradient(25deg, #b643ff8a, #76ff6dba); */
+  background-color: #ffffff4a;
+}
+
+/* Caption text */
+/* #project .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+} */
+
+/* Number text (1/3 etc) */
+/* .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+} */
+
+/* The dots/bullets/indicators */
+#project .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#project .active,
+#project .dot:hover {
+  background-color: #adf16b;
+}
+
+/* Fading animation */
+#project .focus-in {
+  -webkit-animation: focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes focus-in {
+  0% {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in {
+  0% {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/* ------------모바일------------ */
+@media (max-width: 1024px) {
+  #project {
+    height: 350em !important;
+  }
+
+  #project #edms .project_content .project_name,
+  #project #ems1 .project_content .project_name,
+  #project #ups .project_content .project_name {
+    height: 5em;
+  }
+
+  #project #ems2 .project_content .project_name,
+  #project #drone .project_content .project_name {
+    height: 7em;
+  }
+
+  #project
+    .contents
+    .project_content
+    .project_dev_percent
+    .project_dev_percent_title {
+    width: 42% !important;
+  }
+
+  #project #edms,
+  #project #ems1,
+  #project #ems2,
+  #project #ups,
+  #project #drone {
+    height: 50em;
+  }
+
+  #project div[class="project_root"]:not(:last-child) {
+    margin-bottom: 5em !important;
+  }
+
+  #project .contents #edms .project_img {
+    top: 5em !important;
+  }
+
+  #project .contents #ems1 .project_img {
+    top: 60em !important;
+  }
+
+  #project .contents #ems2 .project_img {
+    top: 115em !important;
+  }
+  #project .contents #ups .project_img {
+    top: 170em !important;
+  }
+  #project .contents #drone .project_img {
+    top: 225em !important;
+  }
+}

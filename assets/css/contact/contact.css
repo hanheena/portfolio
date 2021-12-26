@@ -1,0 +1,86 @@
+#contact {
+  background-color: #000;
+  height: 42em;
+  color: #fff;
+  padding: 0 8em 4em 8em;
+}
+
+#contact:before {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: "";
+  display: block;
+  height: 30em;
+  position: absolute;
+  top: -30em;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url(/resource/img/tree4.png);
+  image-rendering: pixelated;
+}
+
+#contact .contents {
+  margin-top: 4em;
+  line-height: 200%;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#contact .section_title {
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 3px;
+  width: 100%;
+  text-shadow: 3px 5px #adf16b;
+  padding-bottom: 3%;
+  border-bottom: 3px solid #363636;
+}
+
+#contact .contents .major {
+  font-weight: 600;
+  font-size: 2.6em;
+  color: #9b76d8;
+  text-shadow: 0 1px 0 #a7a7a7, 0 2px 0 #ffffff, 0 3px 0 #a7a7a7, 0 4px 0 #fff,
+    0 5px 0 #a7a7a7, 0 6px 0 #fff, 0 7px 0 #a7a7a7, 0 8px 0 #fff,
+    0 50px 30px rgb(0 0 0 / 30%);
+}
+
+#contact .contact .contact_phone::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 22.5rem;
+  left: calc(50% - 2px);
+  width: 2px;
+  height: 3.5rem;
+  background: #363636;
+}
+
+#contact .contact .contact_phone {
+  margin-top: 10em;
+}
+
+#contact .contact .contact_github {
+  /* display: flex; */
+}
+
+#contact .contact .contact_github a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#contact .contact .contact_github a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+#contact .contact .contact_email {
+  /* display: flex; */
+}
+
+#contact .contact div[class*="contact_"] i {
+  margin-right: 10px;
+}

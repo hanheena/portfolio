@@ -1,0 +1,123 @@
+#profile {
+  background-color: #000;
+  height: 64em;
+  color: #fff;
+  padding: 4em 8em 2em 8em;
+}
+
+/* #profile:before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%237353c1%3B' /%3E%3C/svg%3E");
+} */
+
+#profile .section_title {
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 3px;
+  width: 100%;
+  text-align: right;
+  text-shadow: 3px 5px #682fc5;
+  border-bottom: 3px solid #404040;
+  padding-bottom: 3%;
+}
+
+/* #profile .section_title_hr {
+  background: #ffffff47;
+  height: 4px;
+  border: none;
+} */
+
+#profile .tatal_contents_wrap {
+  /* opacity: 0; */
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* #profile .tatal_contents_wrap.animation {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  opacity: 1;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+} */
+
+#profile .contents {
+  width: 55%;
+  /* height: -webkit-fill-available; */
+  float: left;
+}
+
+#profile .contents p {
+  line-height: 200%;
+  margin-top: 22%;
+  word-break: keep-all;
+  font-size: 1.1em;
+}
+
+#profile .about {
+  float: left;
+  width: 45%;
+  margin-top: 8%;
+}
+
+#profile .about .img {
+  background-image: url(/resource/img/profile_img.jpg);
+  width: 50%;
+  margin-left: 50%;
+  height: 360px;
+  background-size: cover;
+  /* border-radius: 20px; */
+  position: relative;
+  /* box-shadow: 3px 3px 5px #363379bf; */
+}
+
+#profile .about .img::after {
+  position: absolute;
+  left: -14px;
+  top: -14px;
+  display: block;
+  width: 100%;
+  height: inherit;
+  content: "";
+  border: 3px solid #adf16b;
+}
+
+#profile .about .info {
+  text-align: right;
+}
+
+#profile .about .info p {
+  margin: 0;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  /* font-family: "NanumSquareRound"; */
+}
+
+#profile .about .info p:first-child {
+  margin: 1em 0 0.5em 0;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #adf16b;
+}
+
+#profile .about .info p:last-child {
+  font-size: 1.5em;
+}

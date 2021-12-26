@@ -1,0 +1,15 @@
+#side .inner {
+  left: 82em;
+  display: block;
+  position: fixed;
+  letter-spacing: 0.04em;
+  font-size: 12px;
+  color: #fff;
+  will-change: transform;
+  transform-origin: 100% 0%;
+  opacity: 0.7;
+  transform: rotate(90deg);
+  top: 50em;
+  z-index: 100;
+  font-family: "Eoe_Zno_L";
+}

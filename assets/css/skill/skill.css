@@ -1,0 +1,263 @@
+#skill:before {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: "";
+  display: block;
+  height: 15em;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  top: -12em;
+  margin: 0;
+  background-image: url(/resource/img/mountain1.png);
+}
+
+#skill {
+  background-color: #3e2567;
+  height: 100em;
+  color: #fff;
+  padding: 8em 8em 2em 8em;
+}
+
+#skill .section_title {
+  font-size: 3em;
+  /* float: right; */
+  font-weight: 600;
+  letter-spacing: 3px;
+  width: 100%;
+  text-shadow: 3px 5px #adf16b;
+  padding-bottom: 3%;
+  border-bottom: 3px solid #6e5c8d;
+}
+
+#skill .contents .graph_wrap .graph_wrap_ul {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 4em 4em 0 4em;
+  /* font-family: "NanumSquareRound"; */
+}
+
+#skill .contents .graph_wrap .graph_wrap_ul li {
+  list-style: none;
+  display: flex;
+  height: 24px;
+}
+
+#skill .contents .graph_wrap .graph_wrap_ul li:not(:last-child) {
+  margin-bottom: 3%;
+}
+
+#skill .contents .graph_wrap .graph_wrap_ul li .data_name {
+  width: 20%;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+#skill .contents .graph_wrap .graph_wrap_ul li .data_figure {
+  width: 80%;
+  background-color: #553f79;
+  border-radius: 5px;
+  position: relative;
+}
+
+#skill .graph_wrap_ul li .data_figure div[class*="data_fill"] span {
+  padding-right: 12px;
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+#skill .graph_wrap_ul li .data_figure div[class*="data_fill"] {
+  border-radius: 5px;
+  position: absolute;
+  display: block;
+  height: 100%;
+  opacity: 0;
+}
+
+#skill .graph_wrap_ul.animation li .data_figure div[class*="data_fill"] {
+  opacity: 1;
+  -webkit-animation: scale-up-hor-left 2s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-hor-left 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}
+@keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}
+
+/* java fill */
+#skill .graph_wrap_ul li .data_figure .data_fill_1 {
+  width: 55%;
+  background: linear-gradient(90deg, #b852cc, #76fd7a);
+  border-radius: 5px;
+  position: absolute;
+  display: block;
+  height: 100%;
+}
+
+/* MYSQL fill */
+#skill .graph_wrap_ul li .data_figure .data_fill_2 {
+  width: 60%;
+  background: linear-gradient(90deg, #76fd7a, #5283cc);
+  border-radius: 5px;
+  position: absolute;
+  display: block;
+  height: 100%;
+}
+
+/* Oracle DB fill */
+#skill .graph_wrap_ul li .data_figure .data_fill_3 {
+  width: 30%;
+  background: linear-gradient(90deg, #5283cc, #cc5285);
+  border-radius: 5px;
+  position: absolute;
+  display: block;
+  height: 100%;
+}
+
+/* Javascript fill */
+#skill .graph_wrap_ul li .data_figure .data_fill_4 {
+  width: 70%;
+  background: linear-gradient(90deg, #cc5285, #b852cc);
+  border-radius: 5px;
+  position: absolute;
+  display: block;
+  height: 100%;
+}
+
+/* Jquery fill */
+#skill .graph_wrap_ul li .data_figure .data_fill_5 {
+  width: 75%;
+  background: linear-gradient(90deg, #b852cc, #76fd7a);
+  border-radius: 5px;
+  position: absolute;
+  display: block;
+  height: 100%;
+}
+
+/* Node.js fill */
+#skill .graph_wrap_ul li .data_figure .data_fill_6 {
+  width: 20%;
+  background: linear-gradient(90deg, #76fd7a, #5283cc);
+  border-radius: 5px;
+  position: absolute;
+  display: block;
+  height: 100%;
+}
+
+/* HTML fill */
+#skill .graph_wrap_ul li .data_figure .data_fill_7 {
+  width: 80%;
+  background: linear-gradient(90deg, #5283cc, #cc5285);
+  border-radius: 5px;
+  position: absolute;
+  display: block;
+  height: 100%;
+}
+
+/* CSS3 fill */
+#skill .graph_wrap_ul li .data_figure .data_fill_8 {
+  width: 80%;
+  background: linear-gradient(90deg, #cc5285, #b852cc);
+  border-radius: 5px;
+  position: absolute;
+  display: block;
+  height: 100%;
+}
+
+/* SCSS fill */
+#skill .graph_wrap_ul li .data_figure .data_fill_9 {
+  width: 30%;
+  background: linear-gradient(90deg, #b852cc, #76fd7a);
+  border-radius: 5px;
+  position: absolute;
+  display: block;
+  height: 100%;
+}
+
+/* Spring fill */
+#skill .graph_wrap_ul li .data_figure .data_fill_10 {
+  width: 65%;
+  background: linear-gradient(90deg, #76fd7a, #5283cc);
+  border-radius: 5px;
+  position: absolute;
+  display: block;
+  height: 100%;
+}
+
+/* etc_data */
+
+/* #skill .graph_wrap_ul li.etc_data::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 57.5rem;
+  left: calc(50% - 2px);
+  width: 2px;
+  height: 3.5rem;
+  background: #6e5c8d;
+} */
+
+#skill .graph_wrap_ul li.etc_data {
+  margin-top: 14%;
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  #skill .graph_wrap_ul li.etc_data .etc_data_contents_wrap::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 69.5rem;
+    left: calc(50% - 2px);
+    width: 2px;
+    height: 3.5rem;
+    background: #6e5c8d;
+  }
+}
+
+#skill .graph_wrap_ul li.etc_data .etc_data_contents_wrap {
+  margin-top: 1%;
+  width: 100%;
+}
+
+#skill .graph_wrap_ul li.etc_data .etc_data_title {
+  font-size: 2em;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 3px 3px #8a70b5;
+}
+
+#skill .graph_wrap_ul li.etc_data .etc_data_contents {
+  letter-spacing: 1px;
+}
